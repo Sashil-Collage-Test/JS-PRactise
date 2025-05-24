@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>Function that gives Eggless Array</h3></head>
+  <body>
+    <script>
+      function removeEgg(array){
+        console.log("Given array:",array);
+        const result=[];
+        for(let i=0;i<array.length;i++){
+          if(array[i]==='egg'){
+            continue;
+          }else{
+            result.push(array[i]);
+          }
+        }
+        console.log("Eggless Array:"+result);
+      }
+
+      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick="update()">Add to Cart</button>
+    <p class="printing-div"></p>
+    <script>
+      let timeoutId;
+      function update(){
+        document.querySelector('.printing-div').innerHTML="Added";
+
+        clearTimeout(timeoutId);
+
+        timeoutId = setTimeout(function(){
+          document.querySelector('.printing-div').innerHTML="";
+        },1000);
+      }
+    </script>
+  </body>
+</html>

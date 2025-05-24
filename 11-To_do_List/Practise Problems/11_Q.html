@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>Finding given Element's first occurance an array</h3></head>
+  <body>
+    <script>
+      function findIndex(array,word){
+        console.log("The Array:"+array+"\nAnd search for word:"+word);
+        let index=-1;
+        for(let i=0;i<array.length;i++){
+          if(array[i]===word){
+            return i;
+            break;
+          }
+        }
+        if(index===-1){
+          console.log(word+" Not found");
+        }else{
+          console.log("First Apperance at: "+index);
+        }
+      }
+      console.log(findIndex(['green','red','blue','red'],'red'));
+      console.log(findIndex(['green','red','blue','red'],'yellow'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>FizzBuzz Problem</h3></head>
+  <body>
+    <script>
+      function fizzbuzz(initial,final){
+        const array=[];
+        const num=[];
+        for(let i=initial;i<=final;i++){
+          array.push(i);
+
+          if(i%3===0 && i%5===0){
+            num.push("FIZZBUZZ");
+          }else if(i%3===0){
+            num.push("FIZZ");
+          }else if(i%5===0){ 
+            num.push("BUZZ");
+          }else{
+            num.push(i);
+          }
+        }
+        console.log("Gven values Array:"+array);
+        console.log("The FIZZBUZZ List:",num);
+      }
+
+      console.log(fizzbuzz(1,20));
+    </script>
+  </body>
+</html>

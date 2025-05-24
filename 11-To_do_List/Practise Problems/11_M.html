@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>MINMUM & MAXIMUM</h3></head>
+  <body>
+    <script>
+      function minMax(num){
+        // console.log(num);
+        const result={
+          min: null,
+          max: null
+        };
+
+        for(let i=0;i<num.length;i++){
+          const values=num[i];
+
+          if(result.min===null||values<result.min){
+            result.min=values;
+          }
+
+          if(result.max===null||values>result.max){
+            result.max=values;
+          }
+        }
+        return result;
+      }
+
+      console.log(minMax([]));
+      console.log(minMax([3]));
+    </script>
+  </body>
+</html> 

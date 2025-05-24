@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .game-style{
+        padding: 5px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .isStyle{
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="game-style game-butt" onclick="
+      const button=document.querySelector('.game-butt');
+      if(!button.classList.contains('isStyle')){
+        button.classList.add('isStyle');
+      }
+      else{
+        button.classList.remove('isStyle');
+      }">Gaming</button>
+  </body>
+</html>

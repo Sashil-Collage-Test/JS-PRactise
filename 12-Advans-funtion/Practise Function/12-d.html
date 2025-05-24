@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button class="buTTon" onclick="update()">Start</button>
+    <script>
+      function update(){
+        document.querySelector('.buTTon').innerHTML='Loading....';
+        setTimeout(function(){
+          document.querySelector('.buTTon').innerHTML='Finished'
+        },2000);
+      };
+    </script>
+  </body>
+</html>

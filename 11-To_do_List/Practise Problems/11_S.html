@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>Function that removes first TWO egg form Array</h3></head>
+  <body>
+    <script>
+      function removeEgg(array){
+        console.log("Given array:",array);
+        const result=[];
+        let eggTwoCount=0;
+        for(let i=0;i<array.length;i++){
+          if(array[i]==='egg' && eggTwoCount<2){
+            eggTwoCount++;
+            continue;
+          }else{
+            result.push(array[i]);
+          }
+        }
+        console.log("Eggless Array:"+result);
+      }
+
+      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+    </script>
+  </body>
+</html>

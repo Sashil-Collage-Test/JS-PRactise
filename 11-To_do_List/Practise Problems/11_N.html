@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>Count of elements in Array</h3></head>
+  <body>
+    <script>
+      function countElement(array){
+        console.log("The Array:",array)
+        const result={};
+
+        for(let i=0;i<array.length;i++){
+          const word=array[i];
+
+          if(!result[word]){
+            result[word]=1;
+          }else{
+            result[word]++;
+          }
+        }
+        console.log("Occurance of the Element:",result)
+      }
+      console.log(countElement(['apple', 'grape', 'apple', 'apple']));
+    </script>
+  </body>
+</html>

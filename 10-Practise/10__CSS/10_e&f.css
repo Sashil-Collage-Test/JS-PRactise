@@ -1,0 +1,14 @@
+.is-Style {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.is-changed {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>Function with .slice(), no Eggs in the END of an Array</h3></head>
+  <body>
+    <script>
+      function noEggEND(array){
+        console.log("Given array:",array);
+        const reversedArray=array.slice().reverse();
+        const result=[];
+        let eggTwoCount=0;
+        for(let i=0;i<reversedArray.length;i++){
+          if(reversedArray[i]==='egg' && eggTwoCount<2){
+            eggTwoCount++;
+            continue;
+          }else{
+            result.push(reversedArray[i]);
+          }
+        }
+        console.log("Eggless Array:"+result.reverse());
+      }
+      console.log(noEggEND(['egg', 'apple', 'egg', 'egg', 'ham']));
+    </script>
+  </body>
+</html>

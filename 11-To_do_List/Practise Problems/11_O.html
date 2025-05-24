@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head><h3>Find the Key string 'search' at the last</h3></head>
+  <body>
+    <script>
+      function findSearch(array){
+        console.log("The given Array: "+array);
+        let index=0;
+        for(let i=0;i<array.length;i++){
+          if('search'===array[i]){
+            index=i;
+          }
+        }
+        if(index===0){
+          console.log("Keyword not found");
+        }else{
+          console.log("Keyword found at: "+index);
+        }
+      }
+      console.log(findSearch(['hello', 'world', 'search', 'good']));
+      console.log(findSearch(['not', 'found']));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>APP</title>
+  </head>
+  <body>
+    <button onclick="message++;">ADD</button>
+    <button onclick="
+    message--;
+    if(message<0){message=0;}">REMOVE</button>
+    <script>
+      let message=1;
+      let show=true;
+      setInterval(()=>{
+        if(message===0){
+          document.title='APP';
+        }else{
+          document.title=show?`(${message})NEW MESSAGE`:'APP';
+          show=!show;
+        }
+      });
+    </script>
+  </body>
+</html> 

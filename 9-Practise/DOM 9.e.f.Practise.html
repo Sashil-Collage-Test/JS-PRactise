@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM 05.Exercise Practise</title>
+  </head>
+  <body>
+    <input placeholder="Name" class="js-name-input"
+    onkeydown="if (event.key==='Enter'){
+      downKey();
+    }">
+    <button onclick="
+      const inputElement=document.querySelector('.js-name-input');
+      document.querySelector('.js-message').innerHTML=`Your Name is:${inputElement.value}`">Submit</button>
+
+    <p class="js-message"></p>
+    <script>
+      function downKey(){
+      const inputElement=document.querySelector('.js-name-input');
+      document.querySelector('.js-message').innerHTML=`Your Name is:${inputElement.value}`
+      };
+    </script>
+  </body>
+</html>
