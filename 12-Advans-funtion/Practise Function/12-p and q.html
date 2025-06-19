@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>APP</title>
+  </head>
+  <body>
+    <button class="printing-button js-click-button">Start</button>
+
+    <button class="js-mess-add-button">ADD</button>
+    <button class="js-mess-sub-button">REMOVE</button>
+    <script>
+      document.querySelector('.js-click-button').addEventListener('click',()=>{
+        setTimeout(()=>{
+        document.querySelector('.printing-button').innerHTML='Finished'
+      },1000);
+      });
+
+
+      document.querySelector('.js-mess-add-button').addEventListener('click',()=>{
+        message++;
+      });
+
+      document.querySelector('.js-mess-sub-button').addEventListener('click',()=>{
+        message--;
+        if(message<0){message=0;}
+      });
+
+      let message=1;
+      let show=true;
+      setInterval(()=>{
+        if(message===0){
+          document.title='APP';
+        }else{
+          document.title=show?`(${message})NEW MESSAGE`:'APP';
+          show=!show;
+        }
+      });
+    </script>
+  </body>
+</html>   
